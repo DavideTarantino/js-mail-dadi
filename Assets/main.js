@@ -12,14 +12,14 @@ if(x > y){
     document.getElementById("risultato").innerHTML = "HAI PERSO :("
 }
 
-let email = ["mariorossi@gmail.com","alfredomariano@gmail.com","davidetarantino@gmail.com","luigipucci@gmail.com"]
-let inputmail = document.getElementById('inputmail').value;
+let email = ["mariorossi@gmail.com","alfredomariano@gmail.com","davidetarantino@gmail.com","luigipucci@gmail.com"];
+let mail = document.getElementById("inputmail");
 
 function accedi(){
-    if(inputmail == email){
-        document.getElementById("responso").innerHTML = "ACCESSO CONSENTITO :)";
+    if(email.includes (mail.value) ){
+        document.getElementById("responso").innerHTML = "ACCESSO CONSENTITO :)"
     }else{
-        document.getElementById("responso").innerHTML = "ACCESSO NEGATO !!";
+        document.getElementById("responso").innerHTML = "ACCESSO NEGATO !!"
     }    
 }
 
