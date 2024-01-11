@@ -1,13 +1,15 @@
 //Minigioco 1
 
-let x = Math.floor((Math.random() * 100) + 1);
+let x = Math.floor((Math.random() * 6) + 1);
 document.getElementById("primo").innerHTML = x;
 
-let y = Math.floor((Math.random() * 100) + 1);
+let y = Math.floor((Math.random() * 6) + 1);
 document.getElementById("secondo").innerHTML = y;
 
 if(x > y){
     document.getElementById("risultato").innerHTML = "HAI VINTO !"
+}else if(x == y){
+    document.getElementById("risultato").innerHTML = "PAREGGIO :/"
 }else{
     document.getElementById("risultato").innerHTML = "HAI PERSO :("
 }
